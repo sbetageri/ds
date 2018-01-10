@@ -90,6 +90,12 @@ public class LinkedList {
         return len;
     }
 
+    public int getLengthOfListReccursive(Node node) {
+        if (node.next == null) {
+            return 1;
+        }
+        return 1 + getLengthOfListReccursive(node.next);
+    }
 
     public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -114,6 +120,8 @@ public class LinkedList {
         int listLen = ll.getLengthOfListIterative();
         System.out.println("Length of list is : " + listLen);
 
+        listLen = ll.getLengthOfListReccursive(ll.head);
+        System.out.println("Length of list is : " + listLen);
 
         /*
         System.out.println("Printing");
