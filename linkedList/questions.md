@@ -1,6 +1,6 @@
 ~~Insertion~~
 ~~Deletion based on key~~
-Deletion based on position
+~~Deletion based on position~~
 Find length of list:
     - Iteratitive
     - Reccursive
