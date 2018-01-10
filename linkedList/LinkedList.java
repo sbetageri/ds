@@ -79,6 +79,18 @@ public class LinkedList {
         cur.next = cur.next.next;
     }
 
+    public int getLengthOfListIterative() {
+        Node cur = head;
+        int len = 0;
+
+        while (cur != null) {
+            len += 1;
+            cur = cur.next;
+        }
+        return len;
+    }
+
+
     public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
@@ -90,10 +102,22 @@ public class LinkedList {
         System.out.println("Printing");
         ll.printAll();
 
+        /*
+
+        Deleting from position 
+
         System.out.println("Position to delete from");
         int key = Integer.parseInt(br.readLine());
         ll.deleteNodeAtPosition(key);
+        */
+
+        int listLen = ll.getLengthOfListIterative();
+        System.out.println("Length of list is : " + listLen);
+
+
+        /*
         System.out.println("Printing");
         ll.printAll();
+        */
     } 
 }
