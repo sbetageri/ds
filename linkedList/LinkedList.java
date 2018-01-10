@@ -23,7 +23,7 @@ public class LinkedList {
         }
     }
 
-    public void deleteKey(int key) {
+    public void deleteNodeWithKey(int key) {
         /*
             if 
                 head has key, move head to next node.
@@ -56,7 +56,7 @@ public class LinkedList {
 
         System.out.println("Deleting now");
         int key = Integer.parseInt(br.readLine());
-        ll.deleteKey(key);
+        ll.deleteNodeWithKey(key);
         System.out.println("Printing");
         ll.printAll();
     } 
