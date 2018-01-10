@@ -87,10 +87,12 @@ public class LinkedList {
             int temp = Integer.parseInt(br.readLine());
             ll.insert(temp);
         }
+        System.out.println("Printing");
+        ll.printAll();
 
-        System.out.println("Deleting now");
+        System.out.println("Position to delete from");
         int key = Integer.parseInt(br.readLine());
-        ll.deleteNodeWithKey(key);
+        ll.deleteNodeAtPosition(key);
         System.out.println("Printing");
         ll.printAll();
     } 
